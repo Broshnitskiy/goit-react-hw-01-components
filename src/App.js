@@ -6,10 +6,13 @@ import { Profile } from "./components/Profile/Profile";
 import { Statistics } from "./components/Statistics/Statistics";
 import { FriendList } from "./components/FriendList/FriendList";
 import { TransactionHistory } from "./components/TransactionHistory/TransactionHistory";
+import { GlobalStyle } from "./components/GlobalStyles";
 
 export default function App() {
   return (
     <>
+      <GlobalStyle />
+
       <Profile user={user} />
 
       <Statistics title="Upload stats" stats={data} />
