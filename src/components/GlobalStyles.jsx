@@ -2,6 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
+body{
+    padding-top:30px;
+}
+
  html {
     scroll-behavior: smooth;
   }

@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const ListItem = styled.li`
   display: flex;
   align-items: center;
+  border: 1px solid grey;
+  border-radius:5px;
+  padding: 5px;
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
   :not(:last-child){
       margin-bottom:15px;
   }
