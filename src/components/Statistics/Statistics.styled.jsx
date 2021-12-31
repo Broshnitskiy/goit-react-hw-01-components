@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { getRandomHexColor } from '../../helpers/random-color';
 
 export const Section = styled.section`
   width: 400px;
@@ -22,7 +23,9 @@ export const ListItem = styled.li`
         flex-basis: calc(100% / 5);
         font-weight:500;
         font-size:20px;
-        
+        background-color: ${(props) => {
+         return getRandomHexColor();
+        }};
         span:first-of-type{
             margin-bottom:10px;
             font-size:16px;

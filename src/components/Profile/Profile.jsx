@@ -1,14 +1,8 @@
 import PropTypes from 'prop-types';
 import {Container, Box, StatsList} from './Profile.styled'
 
-export const Profile = ({ user }) => {
-  const {
-    username,
-    tag,
-    location,
-    avatar = 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png',
-    stats,
-  } = user;
+export const Profile = ({ username, tag, location, avatar = 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png', stats }) => {
+ 
   return (
     <Container >
       <Box >
